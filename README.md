@@ -4,7 +4,7 @@
 Craftify API is designed to support the functionalities of the Craftify application, enabling users to manage DIY projects effectively and interact with Google Cloud Storage for file uploads. This documentation provides details about the API endpoints, request/response structures, and other essential features.
 
 * Cloud Architecture
-  ![Alt text](https://drive.google.com/file/d/1s3S1IT_f1dOJFsC1fvdEvFUfUaKGBdsP/view?usp=sharing?raw=true)
+  ![Cloud Architecture](https://drive.google.com/uc?id=1s3S1IT_f1dOJFsC1fvdEvFUfUaKGBdsP)
 
 ## 🔗Base URL
 ```
