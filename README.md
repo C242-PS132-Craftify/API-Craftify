@@ -39,7 +39,7 @@ npm install
      | `createdAt`    | `string` | 
 
      **Example:**
-     ```
+     ```json
      {
        "title": "Bookshelf Cardboard",
        "author": "alil-hd",
@@ -62,15 +62,18 @@ npm install
      | `createdAt`    | `string` | 
 
      **Example:**
-     ```
-     {
+     ```json
+     [
+       {
        "title": "Bookshelf Cardboard",
        "author": "alil-hd",
        "content": "How to make bookshelf",
        "header_image": "https://storage.googleapis.com/craftify-blog-bucket/918467.jpg",
        "createdAt": "Dec 7, 2024, 12:57:43.236 PM"
-     }
-     ...
+       },
+       `...`
+     ]
+     
      ```
 
 
