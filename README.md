@@ -21,6 +21,59 @@ Install `dependencies` with command:
 npm install
 ```
 
+---
+### API
+
+#### API For Blog
+1. Post Blog
+   - **method**: `POST`
+   - **endpoint**: `/`
+   - **body request**:
+
+     | Parameter      | Type     | 
+     |----------------|----------|
+     | `title`        | `string` | 
+     | `author`       | `string` | 
+     | `content`      | `string` | 
+     | `header_image` | `string` | 
+     | `createdAt`    | `string` | 
+
+     **Example:**
+     ```
+     {
+       "title": "Bookshelf Cardboard",
+       "author": "alil-hd",
+       "content": "How to make bookshelf",
+       "header_image": "https://storage.googleapis.com/craftify-blog-bucket/918467.jpg",
+       "createdAt": "Dec 7, 2024, 12:57:43.236 PM"
+     }
+     ```
+2. Get Blog
+   - **method**: `GET`
+   - **endpoint**: `/`
+   - **body request**:
+
+     | Parameter      | Type     | 
+     |----------------|----------|
+     | `title`        | `string` | 
+     | `author`       | `string` | 
+     | `content`      | `string` | 
+     | `header_image` | `string` | 
+     | `createdAt`    | `string` | 
+
+     **Example:**
+     ```
+     {
+       "title": "Bookshelf Cardboard",
+       "author": "alil-hd",
+       "content": "How to make bookshelf",
+       "header_image": "https://storage.googleapis.com/craftify-blog-bucket/918467.jpg",
+       "createdAt": "Dec 7, 2024, 12:57:43.236 PM"
+     }
+     ...
+     ```
+
+
 ## 👨‍💻Authors:
 * [mickeyjiyestha](https://github.com/mickeyjiyestha)
 * [alilhamdani18](https://github.com/alilhamdani18)
