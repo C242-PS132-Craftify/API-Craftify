@@ -47,6 +47,7 @@ npm install
      }
      ```
    - **Body Response**:
+     
      *Example*
      ```json
      {
@@ -91,6 +92,7 @@ npm install
      | `file`         | `Select files` |
 
    - **Body Response**:
+     
      *Example:*
       ```json
      {
@@ -109,6 +111,7 @@ npm install
      | `file`         | `Select files` |
    
    - **Body Response**:
+     
      *Example:*
       ```json
      {
