@@ -26,9 +26,9 @@ npm install
 
 #### API For Blog
 1. Post Blog
-   - **method**: `POST`
-   - **endpoint**: `/`
-   - **body request**:
+   - **Method**: `POST`
+   - **Endpoint**: `/`
+   - **Body Request**:
 
      | Parameter      | Type     | 
      |----------------|----------|
@@ -36,32 +36,35 @@ npm install
      | `author`       | `string` | 
      | `content`      | `string` | 
      | `header_image` | `string` | 
-     | `createdAt`    | `string` | 
 
-     **Example:**
+     *Example:*
+     ```json
+     {
+       "title": "Bookshelf Cardboard",
+       "author": "alil-hd",
+       "content": "How to make bookshelf",
+       "header_image": "https://storage.googleapis.com/craftify-blog-bucket/918467.jpg"
+     }
+     ```
+   - **Body Response**:
+     *Example*
      ```json
      {
        "title": "Bookshelf Cardboard",
        "author": "alil-hd",
        "content": "How to make bookshelf",
        "header_image": "https://storage.googleapis.com/craftify-blog-bucket/918467.jpg",
+       "user_id": "5u2G9t1WLxWJpJidyAKPThMZmO82",
        "createdAt": "Dec 7, 2024, 12:57:43.236 PM"
      }
      ```
+     
 2. Get Blog
-   - **method**: `GET`
-   - **endpoint**: `/`
-   - **body request**:
+   - **Method**: `GET`
+   - **Endpoint**: `/`
+   - **Body Response**:
 
-     | Parameter      | Type     | 
-     |----------------|----------|
-     | `title`        | `string` | 
-     | `author`       | `string` | 
-     | `content`      | `string` | 
-     | `header_image` | `string` | 
-     | `createdAt`    | `string` | 
-
-     **Example:**
+     *Example:*
      ```json
      [
        {
@@ -69,11 +72,49 @@ npm install
        "author": "alil-hd",
        "content": "How to make bookshelf",
        "header_image": "https://storage.googleapis.com/craftify-blog-bucket/918467.jpg",
+       "user_id": "5u2G9t1WLxWJpJidyAKPThMZmO82",
        "createdAt": "Dec 7, 2024, 12:57:43.236 PM"
        },
-       `...`
+       ...
      ]
      
+     ```
+
+#### API For Upload Image
+1. Upload Scanned Image
+   - **Method**: `POST`
+   - **Endpoint**: `/scan-image`
+   - **Body Request**: `form-data`
+     
+     | Key            | value          | 
+     |----------------|----------------|
+     | `file`         | `Select files` |
+
+   - **Body Response**:
+     *Example:*
+      ```json
+     {
+       "message": "File uploaded successfully",
+       "url": "https://storage.googleapis.com/item-uploaded-bucket/1733055586040-plastic_bottle.jpg",
+     }
+     ```
+  
+2. Upload Blog Image
+   - **Method**: `POST`
+   - **Endpoint**: `/blog-image`
+   - **Body Request**: `form-data`
+     
+     | Key            | value          | 
+     |----------------|----------------|
+     | `file`         | `Select files` |
+   
+   - **Body Response**:
+     *Example:*
+      ```json
+     {
+       "message": "File uploaded successfully",
+       "url": "https://storage.googleapis.com/craftify-blog-bucket/JPEG_1733797346935_6294779736510253822.jpg",
+     }
      ```
 
 
